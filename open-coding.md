@@ -1,0 +1,100 @@
+- **[Original Passage] → Concept = Property**
+- “These two edge-focused distributions have been compared… giving as a result, a clear performance improvement against a classic distribution without showing significant performance differences between K3s and MicroK8s.” → Performance = High
+- “KubeEdge has successfully gone through a series of scalability tests… capable of orchestrating one million pods deployed across 100K edge nodes, accomplishing the K8s Service Level Indicators (SLI) and Service Level Objectives (SLO).” → Scalability = High
+- “K3s has lower minimum hardware requirements, 512MB for master nodes and 256MB for worker nodes, compared to more than 2GB per node for a traditional deployment…” → Memory-Usage = Low
+- “Kubespray exhibits a 15% increase in the cold start delay compared to both K3s and MicroK8s.” → Startup-Latency = High
+- “Kubespray exhibits better performance than both K3s and MicroK8s in 6 of the 14 tests, such as model-training, pyaes, and sequential-disk-io.” → Performance = High
+- “MicroK8s exhibits lower response times in varied workload HPA tests.” → Response-Time = Low
+- "In clusters with 50 CPUs or more, only 13% of the CPUs that were provisioned were utilized, on average. Memory utilization was slightly higher at 20%, on average." → CPU-Utilization = Low; Memory-Utilization = Low
+- "Cloud waste is lower on Google, at 17%." → Cloud-Waste = Lower
+- "Overprovisioning – Clusters are provisioned with more capacity than they need. The more resources are overprovisioned and left idle in the background, the higher the cloud costs." → Cloud-Costs = Higher (due to overprovisioning)
+- "Unwarranted headroom in pod requests – CPU and memory requests are set higher than what Kubernetes applications actually require, leading to wasted capacity that companies pay for." → Cloud-Costs = Higher (due to wasted capacity)
+- "The cost of an average CPU using on-demand is \$6.7 per hour, whereas the cost... using Spot instances is \$1.8 per hour." → Cloud-Cost (Spot-Instances) = Lower
+- "Branch... was able to fall back when Spot instances are reclaimed by automatically spinning up new equivalent compute instances... resulting in several millions of dollars per year in AWS Cloud compute cost savings." → Cloud-Cost-Savings = Significant (due to Spot Instance fallback)
+- "All container orchestration (CO) frameworks follow a declarative configuration management approach instead of an imperative configuration management approach." → Configuration-Management = Declarative
+- "Kubernetes implements the highest number of common features, but also supports the highest number of unique features." → Feature-Set = Highest
+- "The risk that a common feature will be deprecated by a CO framework without being replaced ... is less than 2%." → Feature-Deprecation-Risk = Low
+- "Faster response times: When workloads are published at the edge... effectively reducing latency and increasing responsiveness..." → Latency = Reduced; Responsiveness = Increased
+- "Edge computing enables data to be stored and processed at the edge... reducing the bandwidth consumption of the local network." → Bandwidth-Consumption = Reduced
+- "Data is generated, processed and stored on the edge device, avoiding the leakage of sensitive data... keeping the data local to the device maintains the integrity..." → Data-Security = High; Data-Integrity = Maintained
+- "EC-IoT reference architecture allows organizations to increase their computing power faster and at a lower cost..." → Computing-Power-Increase = Faster; Cost = Lower
+- "EC-IoT architecture has significant advantages in terms of service agility and bandwidth optimization, which help to improve the quality of service..." → Service-Agility = High; Bandwidth-Optimization = High; Quality-of-Service = Improved
+- "Xia proposed an edge-based energy management framework... to schedule the operation time of each appliance for achieving minimum electricity cost." → Electricity-Cost = Minimum
+- "K3s’s minimum requirements are 256 MB of RAM for an agent node, and 512 MB for a server node with some workloads running in the agent node." → Minimum-RAM-Requirements = Low
+- "MicroK8s, which claims to have a minimal memory usage of around 540 MB, but its recommended memory allocation is 4 GB, which is considerably more than K3s." → Memory-Allocation-Recommended (K3s) = Lower
+- "These two edge-focused distributions have been compared... giving as a result, a clear performance improvement against a classic distribution without showing significant performance differences between K3s and MicroK8s." → Performance-Improvement (Edge-Distributions) = Clear
+- "The KubeEdge architecture... translates into a low memory footprint of the EdgeCore installation... only around 70 MB." → Memory-Footprint (EdgeCore) = Low
+- "KubeEdge has successfully gone through a series of scalability tests... capable of orchestrating one million pods deployed across 100K edge nodes, accomplishing the K8s Service Level Indicators (SLI) and Service Level Objectives (SLO)." → Scalability = High
+- "KubeEdge’s EdgeMesh... allows for transparent communication in complex network environments and establishes high-reliability scenarios..." → Communication = Transparent; Reliability = High
+- "crun achieved the goal in 1.69 s, while runC took 3.34 s." → Startup-Time (crun) = Faster
+- "Wasm binaries’ tiny size, low memory footprint, great isolation, fast booting (up to 100 times faster than containers), and response times make Wasm perfect for running workloads in edge and IoT devices." → Binary-Size = Tiny; Memory-Footprint = Low; Isolation = Great; Booting = Fast; Response-Time = Fast
+- "the replacement of traditional container-based controllers with Wasm-based ones showed a reduced memory consumption of about 64%." → Memory-Consumption (Wasm-Controllers) = Reduced
+- "Edge/Fog devices are resource-limited, lightweight orchestration techniques should be deployed to free up the resources for the smooth execution of end-user applications." → Orchestration-Techniques = Lightweight; Resource-Footprint = Low
+- "We choose K3s as the backbone for the hybrid computing environment because it only occupies less than half of the resources of Kubernetes..." → Resource-Usage (K3s) = Lower (than Kubernetes)
+- "...the new system (i.e., O-FogBus2) enables resource limit control, health check, and self-healing from failure..." → Failure-Recovery = Enabled; Health-Check = Enabled
+- "For all tested applications, the average response time is longer than the native FogBus2 framework by an average of 7%... this overhead is very lightweight and acceptable." → Overhead = Very-Lightweight; Response-Time-Increase = Acceptable
+- "...placing the entire system in a hybrid computing environment can reasonably utilize the Cloud and Edge/Fog computing resources and improve system performance." → System-Performance = Improved; Resource-Utilization = Reasonable
+- "Service orchestration achieves the best results. Only EIS results come in second place... non-orchestration warns that the result may deteriorate due to mismatches between nodes and tasks." → Performance = Best (with orchestration)
+- "This also basically shows that service delay can be significantly reduced by EIS and its service orchestration compared with centralized cloud computing." → Service-Delay = Significantly-Reduced
+- "The strategy controller deployed on edge realizes the local nearby control to ensure the real-time performance of business scheduling." → Scheduling-Performance = Real-Time
+- "Cloud-edge intelligent services support elastic capacity expansion to manage complex platform environments and resource expansion." → Capacity-Expansion = Elastic; Resource-Expansion = Supported
+- "The system supports data security (SSL/TSL protocol communication), application security (container deployment) and platform security (based on RBAC, UAA, SSO, and JSON tokens)." → Security-Features = Comprehensive
+- "GKE offers significantly more automation, including features like automatic node and control plane upgrades and GKE Autopilot, which manages worker nodes, enables cluster autoscaling, and configures sane networking and security defaults for the user." → Automation = Significantly-More; Networking-Defaults = Sane; Security-Defaults = Sane
+- "Constellation... uses confidential computing and confidential VMs to create and run always-encrypted K8s clusters that are shielded from the cloud provider and potential attackers." → Cluster-Security = Always-Encrypted; Cloud-Provider-Shielding = Enabled
+- "The RKE binary also builds in snapshot and restore functionality for disaster recovery." → Disaster-Recovery = Built-In
+- "Google Kubernetes Engine (GKE) offers confidential GKE nodes which provide encryption-in-use for Kubernetes worker nodes. This significantly reduces the attack surface..." → Attack-Surface = Reduced; Encryption-In-Use = Provided
+- "By default, Constellation deploys Cilium with transparent encryption using WireGuard." → Network-Encryption = Transparent (Default)
+- "Constellation offers a Rekor transparency log for its CLI and node images, and has adopted Level 3 of the Supply Chain Levels for Software Artifacts (SLSA) framework." → Supply-Chain-Security = High-Level; Transparency-Log = Provided
+- "OpenShift supports at-rest LUKS v2 encryption of persistent disks when using OpenShift Container Storage." → Data-At-Rest-Encryption = Supported
+- "OpenShift offers in-transit encryption when using the OVN-Kubernetes CNI. With IPSec enabled, all network traffic between nodes on the OVN-Kubernetes CNI cluster network travels through an encrypted tunnel." → Data-In-Transit-Encryption = Supported
+- "Constellation does not rely on cloud-provider at-rest encryption and instead performs its own key management and at-rest encryption using a custom container storage interface… All cryptographic operations happen inside the trusted environment of the confidential Constellation node." → Key-Management = Custom; Data-At-Rest-Encryption-Reliance = None (on cloud provider)
+- "Azure Kubernetes Service (AKS) supports adding AMD SEV-SNP nodes as worker pools... provides encryption-in-use for Kubernetes worker nodes." → Encryption-In-Use = Provided
+- "One of the primary focuses is function instantiation speed as a prerequisite for efficient scale-to-zero behavior... this added complexity could also potentially affect the initial start up times of containers." → Instantiation-Speed = Primary-Focus; Scale-To-Zero = Efficient
+- "K3s has lower minimum hardware requirements... 512MB for master nodes and 256MB for worker nodes... compared to more than 2GB per node for a traditional deployment..." → Minimum-Hardware-Requirements = Lower
+- "Kubespray... exhibits a 15% increase in the cold start delay compared to both K3s and MicroK8s." → Cold-Start-Delay = Lower (for K3s/MicroK8s)
+- "Kubespray lags in some of the more CPU intensive tests such as AES encryption/decryption and linear equation solving." → CPU-Intensive-Performance = Lower (for Kubespray)
+- "Statistically significant results were obtained for 13 of the 14 functions \[in serial execution tests]... results between K3s and MicroK8s are much closer together compared to those of Kubespray." → Performance-Similarity (K3s/MicroK8s) = High
+- "MicroK8s exhibits lower response times \[than others] in varied workload HPA tests." → Response-Time = Lower
+- "Sequential read and write tests using the dd tool where a traditional Kubespray deployment shows 22% decrease in the number of total executions... and a 28% increase in the average response time." → Response-Time = Increased (for Kubespray)
+- "Kubespray... experienced higher average response times in both serial and parallel executions for matrix multiplication and linear equations solving." → Response-Time = Higher (for Kubespray)
+- "The etcd can be a bottleneck... loading millions of objects from an etcd can take dozens of minutes..." → Scalability-Bottleneck (etcd) = Exists
+- "KOLE improves scalability by sacrificing the manageability of having individual objects... we snapshot the cloud state cache periodically..." → Scalability = Improved; Manageability = Sacrificed
+- "We have conducted experiments... distribute a workload specification to one million nodes in \~73 seconds, handle one million node registrations in five minutes, and rebuild the cloud state cache... in \~20 seconds..." → Workload-Distribution-Time = Fast; Node-Registration-Time = Fast; Cloud-State-Rebuild-Time = Fast
+- "The List API performance is a bottleneck..." → API-Performance (List) = Bottleneck
+- "The KOLE controller consumes ∼1.4 cores with one million nodes... the MQTT broker consumes ∼2 cores and 57.3GB memory..." → Resource-Consumption (KOLE-Controller) = Low; Memory-Consumption (MQTT-Broker) = High
+- "The installed node daemons consume less than 200MB memory constantly..." → Node-Daemon-Memory-Consumption = Low
+- "KOLE: lite-kubelet 80MB, containerd 80MB vs Kubernetes Kubelet 128MB, Kubeproxy 48MB, network plugin 48MB." → Memory-Footprint (KOLE) = Lower (than Kubernetes)
+- "Using the gzip algorithm... reduced the number of snapshot CRs from 503 to 33 (93% reduction)... snapshot wall-clock time is ∼10 seconds..." → Snapshot-Size = Reduced; Snapshot-Time = Fast
+- "The dynamic node can also be seen as a mobile router participating in networking... Then, based on the edge mesh architecture, the ability of service migration and computing, communication, and caching resource allocation can be archived, greatly improving the efficiency of edge devices resource allocation." → Resource-Allocation-Efficiency = Greatly-Improved
+- "Fast and flexible mesh technology is necessary... By the Edge-mesh architecture, a large computing block is broken down into small pieces, which will enable the service to respond more accurately and quickly." → Service-Response = Accurate-And-Quick
+- "Security is the first area that is often misunderstood when it comes to adopting K8s. \[...] Kubernetes is not secure per default." → Security-Default = Low
+- "89.1% of the top performers are able to deploy to dev or staging on their own and on demand." → Developer-Self-Service = High
+- "Top performers document their Kubernetes setup overwhelmingly more accurately than low performers." → Documentation-Accuracy = High
+- "k0s showed the lowest resource utilization, while k3s and k0s achieved the highest control plane performance in terms of high throughput and low latency." → Resource-Utilization (k0s) = Lowest; Control-Plane-Performance = Highest
+- "k3s has been consequently designed to reduce binary size (64.5 MB) and memory footprint targeting resource constrained edge clusters besides developer workstations." → Binary-Size = Reduced; Memory-Footprint = Reduced
+- "k0s... was done with security in mind, allowing a 100% FIPS compliance if a proper toolchain is in place... can potentially be quickly fixed within k0s..." → Security-Compliance = FIPS-100%; Security-Fixes = Quick
+- "The response time decreased from 113 ms for one pod to 42 ms for four pods when the number of concurrent requests was 16." → Response-Time = Decreased (with more pods)
+- "...the proposed scheme reduces the latency by preventing traffic forwarding between edge nodes in an edge computing environment and improves the throughput of the overall system..." → Latency = Reduced; Throughput = Improved
+- "KE lacks dynamic scaling of the number of pods, which limits its ability to handle incoming requests effectively." → Dynamic-Scaling = Lacking; Request-Handling-Effectiveness = Limited
+- "NHPA improves throughput by allocating pod resources proportionally to the network traffic volume that accesses each node." → Throughput = Improved
+- "The overhead of running the Kubernetes worker node on a Raspberry Pi is approximately the same as running a K3s or KubeEdge worker node..." → Resource-Overhead (Worker-Node) = Similar
+- "Kubernetes, K3s, and KubeEdge show \~50 MB memory footprint... ioFog shows \~240 MB, indicating its unsuitability for constrained devices." → Memory-Footprint = Low (for Kubernetes/K3s/KubeEdge); Suitability-for-Constrained-Devices = Low (for ioFog)
+- "Kubernetes shows the best performance, with a startup time of approximately 1.8 s." → Startup-Time = Fastest
+- "ioFog is by far the worst performer... startup time of 34.5 s and migration time of 23.2 s, due to long request processing time at the controller." → Performance = Worst; Startup-Time = Long; Migration-Time = Long
+- "Using SQLite instead of the default etcd affects the footprint of the controller, but not the worker node." → Controller-Footprint = Affected (by database choice)
+- "None of the selected tools offer a solution to monitor and schedule services based on client QoS parameters." → Scheduling-Based-on-QoS = Lacking
+- "cluster initialization time increases when either the network quality degrades ... or the cluster gets bigger ... however, the decline in performance is the smallest for all KubeEdge experiments." → Performance-Decline-under-Network-Degradation = Smallest
+- "KubeEdge manages to succeed in more experiment setups ... due to its enhanced cloud/edge communication architecture and the underlying QUIC protocol ... instead of TCP..." → Cluster-Stability = High (due to QUIC/Architecture); Protocol = QUIC
+- "KubeEdge never exceeds more than 74kBit/s ... whereas K8s uses up to 102kBit/s and K3s up to 309kBit/s for the same task." → Bandwidth-Consumption = Lowest
+- "In the worst network scenario K8s would consume up to 38%, K3s up to 52.9% and KubeEdge only 22.1% of the available bandwidth." → Bandwidth-Utilization = Lowest
+- "As the cluster size grew to twelve nodes, experiments involving K8s and K3s failed, whereas those using KubeEdge succeeded." → Resilience-to-Size-Growth = High
+- "The utilization of each resource of the PBFDR strategy is 59.04%, 58.04%, 66.78%, and 51.03%, respectively, which is a more reasonable and balanced allocation of resources compared with the other strategies." → Resource-Allocation-Balance = More-Reasonable
+- "Rancher and Docker Swarm use the default orchestration policy ... using resource utilization and load balancing as performance indicators to measure performance." → Performance-Indicators = Resource-Utilization-And-Load-Balancing
+- "The resource utilization equilibrium point of KLLPL is around 23%, while the resource utilization of Rancher and Docker Swarm will be unbalanced as the deployment scale increases..." → Resource-Utilization-Equilibrium = Stable; Resource-Utilization-Balance-with-Scale = Unbalanced (for Rancher/Swarm)
+- "One of the critical factors in choosing an edge computing platform is resource utilization, as it directly impacts the performance, scalability, and security of the platform." → Resource-Utilization = Critical-Factor
+- "Nomad is the orchestrator that gets the lowest average CPU usage and is the most efficient among other orchestrators on the ARM node." → CPU-Usage = Lowest; Efficiency = Highest
+- "Nomad also has the lowest CPU usage, namely 1.21% \[on master node]... on an x86 node... Nomad Orchestrator still had the lowest average CPU usage." → CPU-Usage (Nomad) = Lowest
+- "Nomad becomes the container which more efficient in memory consumption than others in ARM worker node... master node... and on the x86 worker node." → Memory-Consumption (Nomad) = Most-Efficient
+- "Nomad demonstrates a superior level of memory efficiency compared to the others on fresh install state." → Memory-Efficiency (Nomad) = Superior
+- "K3s continues to have the lowest average storage usage, totalling 2371 MB \[ARM node]... K3s remains the most storage-efficient on the x86 node, utilizing only 2620 MB..." → Storage-Usage (K3s) = Lowest; Storage-Efficiency = Highest
+- "K3s shows an impressive level of efficiency in terms of storage resource utilization, as evidenced by its average usage in the deployment state." → Storage-Resource-Utilization-Efficiency (K3s) = Impressive
