@@ -1,0 +1,16 @@
+id,source,target,polarity,verbal
+P1,Security,Resource_Cost,+1,Higher default-security controls (CIS hardening, mTLS) significantly increase control-plane CPU consumption.
+P2,Resource_Cost,Performance,-1,Increased CPU overhead leads to lower scheduling throughput under burst loads.
+P3,Resource_Cost,Performance,+1,Lightweight single-binary distributions reduce pod-startup latency compared with multi-component control planes.
+P4,Security,Reliability,-1,Higher security hardening correlates with longer mean-time-to-recovery after node failures.
+P5,Connectivity,Reliability,+1,Built-in offline autonomy (edge cache, local control) improves service continuity during network partitions.
+P6,Connectivity,Reliability,-1,Strong dependence on continuous cloud connectivity reduces cluster stability in intermittently connected environments.
+P7,Ecosystem,Maintainability,+1,A richer community/ecosystem (plugins, docs, vendor support) lowers operator effort and accelerates troubleshooting.
+P8,Maintainability,Resource_Cost,-1,Higher administrative simplicity reduces operational cost (staff hours and tooling overhead).
+P9,Ecosystem,Maintainability,-1,Excessive feature proliferation without coherent integration increases maintenance complexity.
+P10,Performance,Resource_Cost,-1,Improved efficiency (lower latency, higher throughput) enables equal workload at lower hardware cost.
+P11,Ecosystem,Security,+1,Strong community activity accelerates availability of security patches and CVE fixes.
+P12,Security,Maintainability,-1,Extensive security controls add configuration steps and increase upgrade complexity, raising maintenance burden.
+P13,Connectivity,Performance,-1,Offline-capable designs incur additional caching/synchronisation overhead, slightly degrading steady-state performance.
+P14,Resource_Cost,Security,-1,Tight resource or budget constraints often lead to relaxed security hardening in practice.
+P15,Maintainability,Reliability,+1,Better automation and simpler upgrade paths shorten recovery time after operational incidents.

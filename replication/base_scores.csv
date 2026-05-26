@@ -1,0 +1,8 @@
+construct,k8s,k3s,k0s,KubeEdge,OpenYurt,Nomad_dagger,DockerSwarm_dagger
+Performance,9,8,8,5,6,7,5
+Security,6,1,2,6,6,5,4
+Reliability,8,8,8,7,7,6,5
+Maintainability,5,9,9,3,3,8,8
+Resource_Cost,4,9,8,6,5,8,7
+Connectivity,3,5,5,9,8,4,3
+Ecosystem,10,8,6,6,6,5,3
